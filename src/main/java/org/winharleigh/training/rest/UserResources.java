@@ -27,9 +27,11 @@ public class UserResources {
     @Operation(summary = "Get all Users")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Successfully retrieved all Users"),
-            @ApiResponse(responseCode = "404", description = "Users not found", content = @Content(mediaType = "application/json",
+            @ApiResponse(responseCode = "404", description = "Users not found", content = @Content(mediaType =
+                    "application/json",
                     schema = @Schema(implementation = ErrorResponse.class))),
-            @ApiResponse(responseCode = "500", description = "Internal Server Error", content = @Content(mediaType = "application/json",
+            @ApiResponse(responseCode = "500", description = "Internal Server Error", content = @Content(mediaType =
+                    "application/json",
                     schema = @Schema(implementation = ErrorResponse.class)))})
     @GetMapping("/all")
     public List<Users> getAll() {
@@ -39,9 +41,11 @@ public class UserResources {
     @Operation(summary = "Get User given the id")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Successfully retrieved Users"),
-            @ApiResponse(responseCode = "404", description = "User not found", content = @Content(mediaType = "application/json",
+            @ApiResponse(responseCode = "404", description = "User not found", content = @Content(mediaType =
+                    "application/json",
                     schema = @Schema(implementation = ErrorResponse.class))),
-            @ApiResponse(responseCode = "500", description = "Internal Server Error", content = @Content(mediaType = "application/json",
+            @ApiResponse(responseCode = "500", description = "Internal Server Error", content = @Content(mediaType =
+                    "application/json",
                     schema = @Schema(implementation = ErrorResponse.class)))})
     @GetMapping("/{id}")
     public Users getUserById(@PathVariable final String id) {
