@@ -1,91 +1,93 @@
 # training__mybatis--employee-directory
 
-HOW TO
-Abandon a Service Release
-Add Contract Test using Rest Assured
-Add CSV File Records to DB using Postman
-Add to Email Send JMS Queue
-Add NEXUM Payment by Queue
-Add Prometheus Metrics
-Add Selligent Email Template to System
-Add TPM(Trusted Platform Module) Secret
-AWS Configure to Use dBeaver
-Change IDEA Intellij Version
-Change Password
-Connect from Home
-Copy File in Linux from Command Line
-Create a new database
-Create Acceptable Passwords for Db Configuration etc
-Deploy Application on jBoss
-Deploy New Liquibase Version to Database
-Determine Linux Port to Process Allocation
-Disable the Mac Mouse Pad
-Enable trace logs for RestTemplate
-Find a Linux Process ID
-Find Local Java JDK Version
-Find if Application is Deployed on jBoss
-Find Version Deployed using GlassFish on Staging
-Get access to reach-jboss-dc2.dev
-Get authorization to run open__ rest calls
-Get Functional Tests Working
-Get GAS End Point MPRN
-Get JSON Field from SQL Field
-Get Logs for Production Applications
-Give Permissions to .sh File
-Install Java JDK 17
-Install old version of DBeaver
-Login to the Staging Server
-Monitor
-Naming & Setup ActiveMQ JMS Queue
-Navigate round LINUX less
-Password Protect Files in Mac
-Post foobot Request
-Process a Generated Nexum Payment File
-Rename GIT Branch Name
-Remake Application using Java-Skeleton
-Remove all Docker Images
-Remove Port allocation Process
-Replay XML on to JMS Queues
-Run Rest Application Locally
-Run Account Summary Locally from FE App
-Screenshot of Desktop
-Send Email via Selligent
-Send Secure Data in Google Chat
-Send Suspense Payload Messages Manually to JMS Queue
-Send .War file to Remote Server
-Set the PATH and JAVA_HOME
-Set up a MDD Reassessment in Stage
-Setting up Access to RDS AWS
-Squash GIT Commits
-Start a Spring Application
-View EKS Application Logs
-View Swagger Document
-Install Java JDK 17
-Open Terminal
-Run: brew install openjdk
-Run: sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-Run: echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> /Users/phardy/.bash_profile
-Run: sudo gedit ~/.bash_profile
-Amend the content of .bash_profile
-Run: source ~/.bash_profile
-Amend the content of .bash_profile
-Content of .bash_profile should be:
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home'
+# HOW TO
+* Abandon a Service Release
+* Add Contract Test using Rest Assured
+* Add CSV File Records to DB using Postman
+* Add to Email Send JMS Queue
+* Add NEXUM Payment by Queue
+* Add Prometheus Metrics
+* Add Selligent Email Template to System
+* Add TPM(Trusted Platform Module) Secret
+* AWS Configure to Use dBeaver
+* Change IDEA Intellij Version
+* Change Password
+* Connect from Home
+* Copy File in Linux from Command Line
+* Create a new database
+* Create Acceptable Passwords for Db Configuration etc
+* Deploy Application on jBoss
+* Deploy New Liquibase Version to Database
+* Determine Linux Port to Process Allocation
+* Disable the Mac Mouse Pad
+* Enable trace logs for RestTemplate
+* Find a Linux Process ID
+* Find Local Java JDK Version
+* Find if Application is Deployed on jBoss
+* Find Version Deployed using GlassFish on Staging
+* Get access to reach-jboss-dc2.dev
+* Get authorization to run open__ rest calls
+* Get Functional Tests Working
+* Get GAS End Point MPRN
+* Get JSON Field from SQL Field
+* Get Logs for Production Applications
+* Give Permissions to .sh File
+* Install Java JDK 17
+* Install old version of DBeaver
+* Login to the Staging Server
+* Monitor
+* Naming & Setup ActiveMQ JMS Queue
+* Navigate round LINUX less
+* Password Protect Files in Mac
+* Post foobot Request
+* Process a Generated Nexum Payment File
+* Rename GIT Branch Name
+* Remake Application using Java-Skeleton
+* Remove all Docker Images
+* Remove Port allocation Process
+* Replay XML on to JMS Queues
+* Run Rest Application Locally
+* Run Account Summary Locally from FE App
+* Screenshot of Desktop
+* Send Email via Selligent
+* Send Secure Data in Google Chat
+* Send Suspense Payload Messages Manually to JMS Queue
+* Send .War file to Remote Server
+* Set the PATH and JAVA_HOME
+* Set up a MDD Reassessment in Stage
+* Setting up Access to RDS AWS
+* Squash GIT Commits
+* Start a Spring Application
+* View EKS Application Logs
+* View Swagger Document
+## Install Java JDK 17
+### On mac
+1. Open Terminal
+2. Run: brew install openjdk
+3. Run: sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+4. Run: echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> /Users/phardy/.bash_profile
+5. Run: sudo gedit ~/.bash_profile
+### Amend the content of .bash_profile
+1. Run: source ~/.bash_profile
+2. Amend the content of .bash_profile
+3. Content of .bash_profile should be:
+   ```
+   export JAVA_HOME='/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home'
+   alias j17="export JAVA_HOME=`/usr/libexec/java_home -v17.0`; java -version"
+   alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11.0`; java -version"
+   alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version" 
+   alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
+   alias j6="export JAVA_HOME=`/usr/libexec/java_home -v 1.6`; java -version"
+   export NVM_DIR="/Users/phardy/.nvm"
+   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+   export PATH="/usr/local/opt/openjdk/bin:$PATH"
+   ```
+## Detail & Help on how this works
 
-alias j17="export JAVA_HOME=`/usr/libexec/java_home -v17.0`; java -version"
-alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11.0`; java -version"
-alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
-alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
-alias j6="export JAVA_HOME=`/usr/libexec/java_home -v 1.6`; java -version"
-
-export NVM_DIR="/Users/phardy/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-Detail & Help on how this works
-
-The actual location is in /usr/local/opt/openjdk@<version>/libexec/openjdk.jdk
-Eg.  /usr/local/opt/openjdk@17/libexec/openjdk.jdk
-This is the Actual.
+The actual location is in  
+_/usr/local/opt/openjdk@<version>/libexec/openjdk.jdk_   
+_Eg. /usr/local/opt/openjdk@17/libexec/openjdk.jdk_     
+### This is the Actual...
 The JAVA_HOME is set to a directory which holds the Symbolic Links of the Actuals.
 eg. /Library/Java/JavaVirtualMachines/openjdk-11.jdk
 To Create a Symbolic Link
