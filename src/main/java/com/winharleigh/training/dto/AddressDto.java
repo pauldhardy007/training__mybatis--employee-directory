@@ -1,4 +1,4 @@
-package org.winharleigh.training.dto;
+package com.winharleigh.training.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

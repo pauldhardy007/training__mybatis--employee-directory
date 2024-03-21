@@ -1,10 +1,10 @@
-package org.winharleigh.training.mapper;
+package com.winharleigh.training.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
-import org.winharleigh.training.model.Users;
+import com.winharleigh.training.model.Users;
 
 import java.util.List;
 
@@ -19,13 +19,4 @@ public interface UsersMapper {
             @Result(property = "id", column = "id")
     })
     Users findById(String personId);
-
-    /*
-        @Results(value = {
-            @Result(property = "id", column = "id"),
-            @Result(property="name", column = "name"),
-            @Result(property = "addresses", javaType = List.class,
-                    column = "personId", many=@Many(select = "getAddresses"))
-        })
-     */
 }

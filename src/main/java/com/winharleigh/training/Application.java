@@ -1,15 +1,16 @@
-package org.winharleigh.training;
+package com.winharleigh.training;
 
+import com.winharleigh.training.model.Users;
 import org.apache.ibatis.type.MappedTypes;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.winharleigh.training.model.Users;
 
 @MappedTypes(Users.class)
-@MapperScan("org.winharleigh.training.mapper")
+@MapperScan("com.winharleigh.training")
 @SpringBootApplication
 public class Application {
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }

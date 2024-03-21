@@ -1,4 +1,4 @@
-package org.winharleigh.training.model;
+package com.winharleigh.training.model;
 
 import lombok.Getter;
 

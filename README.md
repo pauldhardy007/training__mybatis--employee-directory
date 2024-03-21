@@ -1,5 +1,11 @@
 # training__mybatis--employee-directory
 
+http://localhost:8080/rest/users/all   
+## Problems resolved
+1. Context path is not working for SpringBoot 3 
+
+   https://stackoverflow.com/questions/76611752/context-path-is-not-working-for-springboot-3
+
 # HOW TO
 * Abandon a Service Release
 * Add Contract Test using Rest Assured
