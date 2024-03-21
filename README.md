@@ -1,4 +1,6 @@
 # training__mybatis--employee-directory
+## Running Swagger: 
+http://localhost:8080/training__mybatis--employee-directory/swagger-ui/index.html
 
 http://localhost:8080/rest/users/all   
 ## Problems resolved
@@ -66,6 +68,8 @@ http://localhost:8080/rest/users/all
 * Start a Spring Application
 * View EKS Application Logs
 * View Swagger Document
+## Download refresh of pom dependencies   
+Run in terminal: ```mvn dependency:tree```
 ## Install Java JDK 17
 ### On mac
 1. Open Terminal

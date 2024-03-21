@@ -3,7 +3,6 @@ package com.winharleigh.training.config;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.servers.Server;
-import org.springdoc.core.GroupedOpenApi;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,14 +24,6 @@ public class SwaggerConfig {
 
     @Value("${server.servlet.context-path}")
     private String serverServletContextPath;
-
-    @Bean
-    public GroupedOpenApi groupedOpenApi() {
-        return GroupedOpenApi.builder()
-                .group(group)
-                .packagesToScan("com.winharleigh.training")
-                .build();
-    }
 
     @Bean
     public OpenAPI openAPI() {
