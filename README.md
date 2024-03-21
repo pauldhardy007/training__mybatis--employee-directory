@@ -2,11 +2,11 @@
 ## Running Swagger: 
 http://localhost:8080/training__mybatis--employee-directory/swagger-ui/index.html
 
-http://localhost:8080/rest/users/all   
 ## Problems resolved
-1. Context path is not working for SpringBoot 3 
-
+1. Context path is not working for SpringBoot 3    
    https://stackoverflow.com/questions/76611752/context-path-is-not-working-for-springboot-3
+2. Using Swagger 3 in Spring Boot 3  
+   https://medium.com/@f.s.a.kuzman/using-swagger-3-in-spring-boot-3-c11a483ea6dc
 
 # HOW TO
 * Abandon a Service Release
